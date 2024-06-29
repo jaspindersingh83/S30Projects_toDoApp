@@ -1,6 +1,6 @@
 // Retrive the todo from localstorage or initialize an empty
 
-let todo = JSON.parse(window.localStorage.getItem("todo")) || [];
+let todo = JSON.parse(globalThis.window.localStorage.getItem("todo")) || [];
 
 const todoInput = document.getElementById("todoInput");
 
